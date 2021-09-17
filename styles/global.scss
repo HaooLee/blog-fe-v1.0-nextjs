@@ -1,0 +1,20 @@
+
+body,html{
+  color: #333;
+  background-color: #fafafa;
+}
+
+a{
+  text-decoration: none;
+}
+
+.nest-bg {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  pointer-events: none;
+}
+

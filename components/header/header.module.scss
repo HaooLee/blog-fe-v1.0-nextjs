@@ -1,0 +1,75 @@
+.header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 8px 24px -2px rgb(0 0 0 / 5%);
+  z-index: 99;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    max-width: 1200px;
+    margin: auto;
+
+    .logo {
+
+    }
+
+    .nav {
+      display: flex;
+      color: #454d64;
+
+      li {
+        margin-left: 40px;
+        height: 64px;
+
+        a {
+          position: relative;
+          display: inline-block;
+          cursor: pointer;
+          font-size: 14px;
+          line-height: 64px;
+          text-decoration: none;
+          color: #4d5164;
+          transition: font-size linear .2s;
+
+          &:hover {
+            color: #6451ab;
+          }
+
+          &.active {
+            color: #6451ab;
+            font-size: 16px;
+            &:after{
+              content: "";
+              position: absolute;
+              bottom: 0;
+              left: -2px;
+              right: -2px;
+              height: 2px;
+              background-color: #6451ab;
+              border-radius: 1px;
+            }
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -18px;
+            left: -18px;
+            height: 64px;
+          }
+        }
+
+      }
+    }
+  }
+
+}
