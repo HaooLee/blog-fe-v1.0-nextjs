@@ -2,48 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1822bd36-c88d-4174-ba00-39af1ae3cab9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/404/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/404/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layout/layout.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/_error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/article/[id].js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/article/article.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/blog/blog.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/blog/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/blog/momentConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/demo/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/404.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/haoolee-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pexels-alex-montes-1820563.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pexels-miguel-á-padriñán-1591056.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pexels-mikhail-nilov-6964961.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pexels-negative-space-169573.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pexels-pixabay-261579.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pexels-pixabay-261662.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/style/restcss.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/code-theme/atom-one-light.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/code-theme/vs2015.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/password.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/storage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/hello.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,18 +19,6 @@
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/components/404/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/blog/index.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="380">
@@ -79,6 +27,15 @@
                     <element signature="e#1#27#0" expanded="true" />
                     <element signature="e#294#374#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="525">
+                  <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -294,6 +251,7 @@
         <option value="$PROJECT_DIR$/utils/index.js" />
         <option value="$PROJECT_DIR$/pages/blog/blog.module.scss" />
         <option value="$PROJECT_DIR$/pages/blog/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -406,12 +364,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1631606291009</updated>
-      <workItem from="1631606292202" duration="64641000" />
+      <workItem from="1631606292202" duration="64921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64641000" />
+    <option name="totallyTimeSpent" value="64921000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
@@ -664,6 +622,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pages/blog/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -672,6 +638,13 @@
             <element signature="e#1#27#0" expanded="true" />
             <element signature="e#294#374#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
         </state>
       </provider>
     </entry>
