@@ -1,6 +1,4 @@
 
-
-// ide
 .CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
   background: none !important;
 }
@@ -14,6 +12,7 @@
   color: #555;
   line-height: 2;
   box-sizing: border-box;
+
   img {
     max-width: 100%;
     margin: 0 auto 25px;
@@ -26,14 +25,18 @@
   code {
     font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', monospace;
   }
+
   code {
     //padding: 2px 4px;
     word-wrap: break-word;
+
     //color: #ff502c;
     //background: #fff5f5;
     border-radius: 3px;
+
     font-size: 13px;
   }
+
   pre {
     padding: 1.25em 1.5em;
     overflow: auto;
@@ -43,13 +46,47 @@
     //background: #f7f7f7;
     line-height: 1.6;
   }
+
   pre code {
-    //padding: 0;
+    padding-left: 0;
     //color: #555;
     //background: none;
+    position: relative;
+    border-left: 6px solid #ef7900;
+    //设置一个计数器 line 初始值-1
+    counter-reset: line -1;
+    box-decoration-break: clone;
     text-shadow: none;
     font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', monospace;
+
+    & .haoolee-count-line {
+      padding-left: 4em;
+      counter-increment: line;
+      position: relative;
+
+      &:before {
+        content: counter(line);
+        position: absolute;
+        left: 0;
+        text-align: right;
+        width: 3em;
+        padding-right: 0.5em;
+        color: #999;
+        border-right: 1px solid #999;
+      }
+    }
   }
+
+  :not(pre) code {
+
+    color: #c7254e;
+    background-color: #f2f2f2;
+    padding: 2px 4px;
+    border: none;
+    vertical-align: middle;
+    white-space: pre-wrap;
+  }
+
   h2,
   h3,
   h4,
@@ -63,32 +100,40 @@
     font-family: 'Lato', 'PingFang SC', 'Microsoft YaHei', sans-serif;
     color: #555;
   }
+
   h2 {
     font-size: 1.4em;
   }
+
   h3 {
     font-size: 1.3em;
     border-bottom: 1px dotted #eee;
   }
+
   h4 {
     font-size: 1.2em;
   }
+
   ul {
     padding-left: 20px;
+
     li {
       line-height: 2;
       list-style: circle;
     }
   }
+
   .hljs-comment,
   .hljs-quote {
     color: #575f6a;
   }
+
   blockquote {
     margin: 1em 0;
     border-left: 4px solid #ddd;
     padding: 0 1em;
     color: #666;
+
     p {
       margin: 0.5em 0;
       line-height: 1.7em;
@@ -102,27 +147,33 @@
     border: 1px solid #f6f6f6;
     border-collapse: collapse;
     border-spacing: 0;
+
     thead {
       background: #f6f6f6;
       color: #000;
       text-align: left;
     }
+
     tr {
       display: table-row;
       vertical-align: inherit;
       border-color: inherit;
+
       &:nth-child(2n) {
         background-color: #fcfcfc;
       }
     }
+
     th {
       padding: 0.8em 0.5em;
       line-height: 1.5em;
     }
+
     tbody {
       display: table-row-group;
       vertical-align: middle;
       border-color: inherit;
+
       td {
         min-width: 7.5em;
         padding: 0.8em 0.5em;
@@ -136,14 +187,16 @@
     margin: 5px 0 5px 15px;
   }
 }
-.sidebar{
+
+.sidebar {
   position: absolute;
   right: 0;
   top: 0;
   width: 240px;
   min-height: 100%;
 }
-.catalogue{
+
+.catalogue {
   position: sticky;
   top: 70px;
   background-color: #fff;

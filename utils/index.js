@@ -5,7 +5,7 @@ import { clear, get } from '@/utils/storage'
 
 
 // 转化md 为html
-export const translateMarkdown2html = plainText => {
+export const translateMarkdown2html = (plainText,styles={}) => {
   const marked_render = new marked.Renderer()
   const isGuardXss = false
   marked_render.old_paragraph = marked_render.paragraph
@@ -50,7 +50,9 @@ export const translateMarkdown2html = plainText => {
     highlight: function (code) {
       const hljs = require('highlight.js');
       /*eslint no-undef: "off"*/
-      return hljs.highlightAuto(code).value
+      const htmlSource = hljs.highlightAuto(code).value
+      const html = htmlSource.split('\n').map(i=>`<span class="${styles['haoolee-count-line']}">${i}</span>`).join('\n')
+      return html
     },
   })
 }

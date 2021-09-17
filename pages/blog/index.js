@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import styles from './blog.module.scss'
 import moment from 'moment'
-import momentConfig from './momentConfig'
+import momentConfig from '../../config/momentConfig'
 import Layout from '@/layout'
 
 moment.locale('zh-cn', momentConfig)
@@ -114,7 +114,7 @@ function Home({articles, tags, hotArticle}) {
             <div className={styles['avatar-wrap']}>
               <Image src={'/images/pexels-negative-space-169573.jpg'} width={200} height={133} layout={'intrinsic'}/>
             </div>
-            <p className={styles['title']}> HaooLee's Blog</p>
+            <p className={styles['title']}> HaooLee&lsquo;s Blog</p>
             <p className={styles['slogan']}>Be a Geek</p>
             <Divider orientation="left">关于我</Divider>
             <div className={styles['desc']}>

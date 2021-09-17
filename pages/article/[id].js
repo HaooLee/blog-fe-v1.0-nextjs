@@ -28,7 +28,7 @@ const Navigation = ({list}) => {
 
 function Home({ data }) {
   // console.log(data)
-  const html = translateMarkdown2html(data.content)
+  const html = translateMarkdown2html(data.content,styles)
   const anchor = getAnchorList(html)
   console.log(anchor)
   return (
