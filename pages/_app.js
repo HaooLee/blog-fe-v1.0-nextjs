@@ -2,6 +2,7 @@
 import React from "react";
 import ReactCanvasNest from 'react-canvas-nest'
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 import Image from 'next/image'
 import "antd/dist/antd.css"
 // import '../styles/code-theme/atom-one-light.css'
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
       </div>
       <Header/>
       <Component {...pageProps} />
+      <Footer/>
     </>
 
   // return <Provider store={store}>
