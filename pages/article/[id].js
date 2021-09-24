@@ -44,6 +44,8 @@ function Article({data}) {
     <Layout>
       <Head>
         <title>{data.title} - haoolee Blog</title>
+        <meta name="description" content={data.desc || '一个码农的踩坑、研究、分享的博客网站'} />
+        <meta name="keywords" content={data.tags.map(i=>i.name).join(',')}/>
       </Head>
       <main>
         <div className={styles['article-wrap']}>

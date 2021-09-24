@@ -58,7 +58,9 @@ function Home({articles, tags, hotArticle}) {
   return (
     <Layout>
       <Head>
-        <title>李昊的Blog-首页</title>
+        <title>李昊的Blog-文章列表</title>
+        <meta name="description" content="一个码农的踩坑、研究、分享的博客网站" />
+        <meta name="keywords" content="haoolee,blog,博客,前端,JavaScript,Vue,React"/>
       </Head>
       <main className={styles['main'] + ' clearfix'}>
 

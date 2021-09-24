@@ -10,7 +10,6 @@ export default function Index() {
       <Head>
         <title>李昊的Blog</title>
         <link rel="icon" href="/favicon.ico" />
-
         <meta name="description" content="一个码农的踩坑、研究、分享的博客网站" />
         <meta name="keywords" content="haoolee,blog,博客,前端,JavaScript,Vue,React"/>
       </Head>

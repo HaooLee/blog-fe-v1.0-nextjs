@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1822bd36-c88d-4174-ba00-39af1ae3cab9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/footer/footer.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/footer/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/article/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/article/[id].js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +22,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/blog/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="36" />
+                <state relative-caret-position="457">
+                  <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#48#0" expanded="true" />
                     <element signature="e#367#465#0" expanded="true" />
@@ -46,11 +44,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/article/[id].js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="410">
-                  <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+                <state relative-caret-position="477">
+                  <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
                   <folding>
                     <element signature="e#0#48#0" expanded="true" />
                     <element signature="e#267#340#0" expanded="true" />
@@ -85,11 +83,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/pages/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+                <state relative-caret-position="195">
+                  <caret line="13" column="81" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="81" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
                   </folding>
@@ -137,7 +135,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/components/footer/footer.module.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="60">
@@ -158,7 +156,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pages/blog/blog.module.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="264">
@@ -268,15 +266,15 @@
         <option value="$PROJECT_DIR$/pages/about/about.module.scss" />
         <option value="$PROJECT_DIR$/pages/blog/blog.module.scss" />
         <option value="$PROJECT_DIR$/components/tag-cloud/tag-cloud.module.scss" />
-        <option value="$PROJECT_DIR$/pages/blog/index.js" />
         <option value="$PROJECT_DIR$/components/tag-cloud/index.js" />
         <option value="$PROJECT_DIR$/pages/article/article.module.scss" />
-        <option value="$PROJECT_DIR$/pages/article/[id].js" />
         <option value="$PROJECT_DIR$/components/header/index.js" />
         <option value="$PROJECT_DIR$/components/footer/footer.module.scss" />
         <option value="$PROJECT_DIR$/pages/_app.js" />
         <option value="$PROJECT_DIR$/components/footer/index.js" />
         <option value="$PROJECT_DIR$/pages/index.js" />
+        <option value="$PROJECT_DIR$/pages/blog/index.js" />
+        <option value="$PROJECT_DIR$/pages/article/[id].js" />
       </list>
     </option>
   </component>
@@ -422,12 +420,12 @@
       <updated>1631606291009</updated>
       <workItem from="1631606292202" duration="79167000" />
       <workItem from="1632201569976" duration="299000" />
-      <workItem from="1632305675959" duration="11396000" />
+      <workItem from="1632305675959" duration="11533000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90862000" />
+    <option name="totallyTimeSpent" value="90999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -633,13 +631,6 @@
     <entry file="file://$PROJECT_DIR$/pages/about/about.module.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/blog/blog.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="193" column="24" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -664,17 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/blog/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <element signature="e#367#465#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/tag-cloud/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -695,18 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/article/[id].js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-            <element signature="e#267#340#0" expanded="true" />
-            <element signature="e#387#416#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/header/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -714,13 +682,6 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/footer/footer.module.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -747,10 +708,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="52" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        <state relative-caret-position="195">
+          <caret line="13" column="81" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="81" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/footer/footer.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/blog/blog.module.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="193" column="24" selection-start-line="193" selection-start-column="24" selection-end-line="193" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/blog/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#367#465#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/article/[id].js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="47" column="71" selection-start-line="47" selection-start-column="71" selection-end-line="47" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#267#340#0" expanded="true" />
+            <element signature="e#387#416#0" expanded="true" />
           </folding>
         </state>
       </provider>
