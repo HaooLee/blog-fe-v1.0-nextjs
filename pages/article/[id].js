@@ -23,7 +23,6 @@ const Navigation = ({list}) => {
   useEffect(() => {
     setTargetOffset(window.innerHeight / 4);
   }, [])
-
   function renderLink({href, title, children}) {
     return (
       <Alink key={href} href={href} title={title}>

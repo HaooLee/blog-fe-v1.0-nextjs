@@ -11,6 +11,7 @@ export const translateMarkdown2html = (plainText,styles={}) => {
   marked_render.old_paragraph = marked_render.paragraph
   // 重写`paragraph()`方法
   marked_render.paragraph = function (text) {
+    console.log(text)
     // isTeXInline - 该文本是否有行内公式
     var isTeXInline = /\$(.*)\$/g.test(text)
     // isTeXLine - 该文本是否有行间公式
@@ -50,7 +51,6 @@ export const translateMarkdown2html = (plainText,styles={}) => {
     highlight: function (code,lang) {
       const hljs = require('highlight.js');
       const language = hljs.getLanguage(lang) ? lang : 'plaintext';
-
 
       // const htmlSource = hljs.highlightAuto(code).value
       /*eslint no-undef: "off"*/

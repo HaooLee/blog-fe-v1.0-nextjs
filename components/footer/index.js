@@ -16,7 +16,6 @@ class Header extends React.Component {
 
     return (
       <footer className={styles['footer']}>
-        备案号:
         <a href="https://beian.miit.gov.cn">京ICP备2021029886号-1</a>
       </footer>
     )
