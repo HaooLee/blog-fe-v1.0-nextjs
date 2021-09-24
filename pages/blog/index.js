@@ -7,9 +7,10 @@ import styles from './blog.module.scss'
 import moment from 'moment'
 import momentConfig from '../../config/momentConfig'
 import Layout from '@/layout'
+import TagCloud from '@/components/tag-cloud'
 
 moment.locale('zh-cn', momentConfig)
-import {translateMarkdown2html, markdownSummary, calcCommentsCount, getColorByName} from '@/utils'
+import {translateMarkdown2html, markdownSummary, calcCommentsCount} from '@/utils'
 import {
   ClockCircleOutlined,
   MessageOutlined,
@@ -121,6 +122,7 @@ function Home({articles, tags, hotArticle}) {
               <p>正经码龄: 4年 </p>
               <p>实际码龄: 9年 (高中开始瞎折腾代码) </p>
               <p>爱好: 💻打游戏 😴睡觉 🍚吃饭 ⌨️敲代码</p>
+              <p>坐标: 北京</p>
             </div>
             <Divider orientation="left">社交媒体</Divider>
             <div className={styles['contact']}>
@@ -142,20 +144,8 @@ function Home({articles, tags, hotArticle}) {
         </aside>
 
         <aside className={styles['right-slide-bar']}>
-          <div className={styles['tag-cloud-wrap']}>
-            <Divider orientation="left">相关标签</Divider>
-            <div className={styles['tags']}>
-              {
-                tags.map((tag, index) => {
-                  const name = tag.name
-                  const count = tag.count
-                  const {color, isDeepColor} = getColorByName(tag.name)
-                  return <Tag color={color} key={index} style={{margin: '4px'}}>{name} ({count})</Tag>
-                })
-              }
-            </div>
-          </div>
 
+          <TagCloud tags={tags}/>
           <div className={styles['hot-article-list-wrap']}>
             <Divider orientation="left">热门阅读文章</Divider>
             <ul className={styles['hot-article-list']}>

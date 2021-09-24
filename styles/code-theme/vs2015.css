@@ -42,8 +42,9 @@ code.hljs {
     color: #dcdcdc
 }
 
-.hljs-comment, .hljs-quote {
-    color: #57a64a;
+.hljs-comment,
+.hljs-quote {
+    color: #575f6a;
     font-style: italic
 }
 

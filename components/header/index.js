@@ -26,6 +26,19 @@ class Header extends React.Component {
     }
   ]
 
+  onScroll(e){
+    console.log(e)
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll',this.onScroll)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll',this.onScroll)
+  }
+
+
   render() {
     const {router} = this.props
 

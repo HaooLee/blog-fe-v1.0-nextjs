@@ -47,10 +47,14 @@ export const translateMarkdown2html = (plainText,styles={}) => {
     smartypants: false,
     langPrefix: 'hljs language-',
     xhtml: false,
-    highlight: function (code) {
+    highlight: function (code,lang) {
       const hljs = require('highlight.js');
+      const language = hljs.getLanguage(lang) ? lang : 'plaintext';
+
+
+      // const htmlSource = hljs.highlightAuto(code).value
       /*eslint no-undef: "off"*/
-      const htmlSource = hljs.highlightAuto(code).value
+      const htmlSource = hljs.highlight(code, { language }).value;
       const html = htmlSource.split('\n').map(i=>`<span class="${styles['haoolee-count-line']}">${i}</span>`).join('\n')
       return html
     },
