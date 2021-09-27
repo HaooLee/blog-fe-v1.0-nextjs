@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1822bd36-c88d-4174-ba00-39af1ae3cab9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/article/[id].js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/article/[id].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/article/article.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/article/article.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -402,18 +397,17 @@
       <workItem from="1632305675959" duration="12367000" />
       <workItem from="1632503072685" duration="424000" />
       <workItem from="1632512414147" duration="6633000" />
-      <workItem from="1632663988276" duration="4878000" />
+      <workItem from="1632663988276" duration="5321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103768000" />
+    <option name="totallyTimeSpent" value="104211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1681736" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1681736" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -427,7 +421,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37448978" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.37448978" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
