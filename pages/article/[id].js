@@ -1,13 +1,14 @@
 import React, {useState, useEffect} from "react"
 import {translateMarkdown2html, getAnchorList} from '@/utils'
-import {Anchor, BackTop, Tag} from 'antd'
+import {Anchor, BackTop, Tag, Button} from 'antd'
 import moment from 'moment'
 import momentConfig from '../../config/momentConfig'
 moment.locale('zh-cn', momentConfig)
+import axios from 'axios'
 
 import {
   ClockCircleOutlined,
-  LikeOutlined,
+  LikeFilled,
   TagsOutlined
 } from '@ant-design/icons'
 
@@ -36,9 +37,16 @@ const Navigation = ({list}) => {
 
 
 function Article({data}) {
-  console.log('Article',data)
+  // console.log('Article',data)
   const html = translateMarkdown2html(data.content, styles)
   const anchor = getAnchorList(html)
+
+  const onLikeClick = ()=>{
+    axios.put(`/api/v1/article/like/${data.id}`)
+  }
+
+
+
   return (
     <Layout>
       <Head>
@@ -50,7 +58,7 @@ function Article({data}) {
         <div className={styles['article-wrap']}>
           <article className={styles["article-detail"]}>
             <div className={styles['article-info']}>
-              <p className={styles['article-title']}>{data.title}</p>
+              <h1 className={styles['article-title']}>{data.title}</h1>
               <div className={styles['time']}>
                 <span>
                   <span>发表于:</span> <ClockCircleOutlined /> <span>{moment(data.createdAt).fromNow()}</span>
@@ -69,13 +77,12 @@ function Article({data}) {
                   })}
                 </span>
                 }
-
               </div>
             </div>
             <div className={styles['article-content']} dangerouslySetInnerHTML={{__html: html}}></div>
 
-            <div >
-
+            <div className={styles['like-wrap']}>
+              <Button className={styles['like-btn']} onClick={onLikeClick} shape="circle" type={'primary'}  ghost style={{width:60,height:60}} icon={<LikeFilled style={{fontSize:30}} />}></Button>
             </div>
           </article>
         </div>

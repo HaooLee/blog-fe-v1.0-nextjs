@@ -7,8 +7,10 @@
   padding-top: 30px;
 
   .article-detail {
-    width: 950px;
+
+    width: 850px;
     padding: 30px;
+    margin-left: 100px;
     //margin: 10px 0;
     background-color: #fff;
     font-family: 'Lato', 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -51,6 +53,9 @@
         padding: 3px;
         //border: 1px solid #ddd;
       }
+      p{
+        font-size: 16px;
+      }
 
       pre, code {
         font-family: consolas, Menlo, 'PingFang SC', 'Microsoft YaHei', monospace;
@@ -80,7 +85,7 @@
       pre code {
         padding-left: 0;
         //color: #555;
-        //background: none;
+        //background: #1e1e1e;
         position: relative;
         border-left: 6px solid #ef7900;
         //设置一个计数器 line 初始值-1
@@ -122,7 +127,7 @@
       h4,
       h5,
       h6 {
-        margin: 20px 0 15px 0px;
+        margin: 40px 0 15px 0px;
         padding-top: 10px;
         border-bottom: 1px solid #eee;
         font-weight: bold;
@@ -132,16 +137,16 @@
       }
 
       h2 {
-        font-size: 1.4em;
+        font-size: 1.6em;
       }
 
       h3 {
-        font-size: 1.3em;
+        font-size: 1.5em;
         border-bottom: 1px dotted #eee;
       }
 
       h4 {
-        font-size: 1.2em;
+        font-size: 1.4em;
       }
 
       ul {
@@ -210,6 +215,32 @@
       ol {
         list-style: decimal;
         margin: 5px 0 5px 15px;
+      }
+    }
+
+    .like-wrap{
+      padding-top: 40px;
+      display: flex;
+      justify-content: center;
+      .like-btn{
+        &:hover{
+          animation: shake 1s cubic-bezier(.36, .07, .19, .97) ;
+        }
+        @keyframes shake {
+          48%, 62% {
+            transform: scale(1.0, 1.0)
+          }
+          50% {
+            transform: scale(1.1, 0.9)
+          }
+          56% {
+            transform: scale(0.9, 1.1) translate(0, -5px)
+          }
+          59% {
+            transform: scale(1.0, 1.0) translate(0, -3px)
+          }
+        }
+
       }
     }
 

@@ -9,9 +9,18 @@ export const translateMarkdown2html = (plainText,styles={}) => {
   const marked_render = new marked.Renderer()
   const isGuardXss = false
   marked_render.old_paragraph = marked_render.paragraph
+
+  marked_render.heading = (text, level) => {
+  const escapedText = text.toLowerCase().replace(/\s+/g, '-');
+    level = level + 1
+    return `<h${level} id="${escapedText}">
+              ${text}
+            </h${level}>`
+  }
+
   // 重写`paragraph()`方法
   marked_render.paragraph = function (text) {
-    console.log(text)
+    // console.log(text)
     // isTeXInline - 该文本是否有行内公式
     var isTeXInline = /\$(.*)\$/g.test(text)
     // isTeXLine - 该文本是否有行间公式

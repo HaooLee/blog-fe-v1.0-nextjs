@@ -164,7 +164,7 @@ function Home({articles, tags, hotArticle}) {
                           </div>
                           <div className={styles['reply-count']}>
                             <LikeOutlined className={styles['icon']}/>
-                            <span>11</span>
+                            <span>{article.likeCount}</span>
                           </div>
                         </div>
                       </a>
