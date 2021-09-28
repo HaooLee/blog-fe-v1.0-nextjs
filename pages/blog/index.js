@@ -115,7 +115,7 @@ function Home({articles, tags, hotArticle}) {
           <div className={styles['info']}>
             <Divider/>
             <div className={styles['avatar-wrap']}>
-              <Image src={'/images/pexels-negative-space-169573.jpg'} width={200} height={133} layout={'intrinsic'}/>
+              <Image src={'https://img.haoolee.com/web/pexels-negative-space-169573.jpg'} width={200} height={133} layout={'intrinsic'}/>
             </div>
             <p className={styles['title']}> HaooLee&lsquo;s Blog</p>
             <p className={styles['slogan']}>Be a Geek</p>
