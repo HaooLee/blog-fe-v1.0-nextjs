@@ -1,8 +1,9 @@
-import React, {useEffect,useState} from "react";
+import React, {useEffect, useState} from "react";
 import Link from 'next/link'
 import Head from 'next/head'
 import Image from 'next/image'
-import { useRouter } from 'next/router'
+import imgLoader from '../../loader'
+import {useRouter} from 'next/router'
 import styles from './blog.module.scss'
 import moment from 'moment'
 import momentConfig from '../../config/momentConfig'
@@ -21,7 +22,7 @@ import {
   MailOutlined,
   LikeOutlined
 } from '@ant-design/icons'
-import {Divider, Tag,Pagination} from 'antd'
+import {Divider, Tag, Pagination} from 'antd'
 
 
 function Home({articles, tags, hotArticle}) {
@@ -47,19 +48,19 @@ function Home({articles, tags, hotArticle}) {
   // }, [router.query.page])
 
 
-  const pageChange = (page) =>{
+  const pageChange = (page) => {
     router.push({
-      query:{
+      query: {
         page
       }
-    },undefined,{scroll: false }) // shallow: true
+    }, undefined, {scroll: false}) // shallow: true
   }
 
   return (
     <Layout>
       <Head>
         <title>李昊的Blog-文章列表</title>
-        <meta name="description" content="一个码农的踩坑、研究、分享的博客网站" />
+        <meta name="description" content="一个码农的踩坑、研究、分享的博客网站"/>
         <meta name="keywords" content="haoolee,blog,博客,前端,JavaScript,Vue,React"/>
       </Head>
       <main className={styles['main'] + ' clearfix'}>
@@ -107,7 +108,8 @@ function Home({articles, tags, hotArticle}) {
               ))}
             </ul>
 
-            <Pagination onChange={pageChange} responsive current={page} total={articles.count} style={{float:'right'}}></Pagination>
+            <Pagination onChange={pageChange} responsive current={page} total={articles.count}
+                        style={{float: 'right'}}></Pagination>
 
           </div>
         </div>
@@ -115,7 +117,12 @@ function Home({articles, tags, hotArticle}) {
           <div className={styles['info']}>
             <Divider/>
             <div className={styles['avatar-wrap']}>
-              <Image src={'https://img.haoolee.com/web/pexels-negative-space-169573.jpg'} width={200} height={133} layout={'intrinsic'}/>
+              <Image
+                loader={imgLoader}
+                src={'/web/pexels-negative-space-169573.jpg'}
+                width={200}
+                height={133}
+                layout={'intrinsic'}/>
             </div>
             <p className={styles['title']}> HaooLee&lsquo;s Blog</p>
             <p className={styles['slogan']}>Be a Geek</p>
@@ -152,7 +159,7 @@ function Home({articles, tags, hotArticle}) {
             <Divider orientation="left">热门阅读文章</Divider>
             <ul className={styles['hot-article-list']}>
               {
-                hotArticle.map((article,index)=>{
+                hotArticle.map((article, index) => {
                   return <li key={index} className={styles['hot-article']}>
                     <Link href={`/article/${article.id}`}>
                       <a>
@@ -184,10 +191,10 @@ function Home({articles, tags, hotArticle}) {
 // 此函数在构建时被调用
 export async function getServerSideProps({query}) {
 
-    const {page} = query
+  const {page} = query
   console.log(page)
   // 调用外部 API 获取博文列表
-  const [articleRes, tagRes,hotArticleRes] = await Promise.all([
+  const [articleRes, tagRes, hotArticleRes] = await Promise.all([
     fetch(`http://127.0.0.1:6060/article/list?page=${page || 1}`),
     fetch('http://127.0.0.1:6060/tag/list'),
     fetch('http://127.0.0.1:6060/article/hotList'),

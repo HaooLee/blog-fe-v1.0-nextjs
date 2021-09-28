@@ -16,9 +16,9 @@ module.exports = {
     })
     return config
   },
-  // images: {
-  //   domains: ['img.haoolee.com'],
-  // }
+  images: {
+    domains: ['img.haoolee.com'],
+  }
   // webpack5: false
 }
 

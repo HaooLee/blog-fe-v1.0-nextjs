@@ -2,6 +2,8 @@ import React from "react";
 import styles from './header.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
+import imgLoader from '../../loader'
+
 import { withRouter } from 'next/router'
 
 class Header extends React.Component {
@@ -47,7 +49,7 @@ class Header extends React.Component {
         <div className={styles['container']}>
           <Link href="/">
             <a className={styles['logo']}>
-              <Image src={'/images/haoolee-logo.png'} height={64} width={194} alt="logo"/>
+              <Image loader={imgLoader} src={'/web/haoolee-logo.png'} height={64} width={194} alt="logo"/>
             </a>
           </Link>
           <nav>

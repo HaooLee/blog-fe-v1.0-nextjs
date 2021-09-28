@@ -20,7 +20,7 @@ class Header extends React.Component {
         <div>
           <a target="_blank" rel="noreferrer" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502046430"
              >
-            <Image src="/images/备案图标.png"/>
+            <img src="/images/备案图标.png"/>
             <span>京公网安备 11010502046430号</span>
            </a>
         </div>
