@@ -17,7 +17,7 @@ module.exports = {
     return config
   },
   images: {
-    domains: ['localhost'],
+    domains: ['https://img.haoolee.com'],
   }
   // webpack5: false
 }
