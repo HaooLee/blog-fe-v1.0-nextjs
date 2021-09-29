@@ -16,9 +16,13 @@ module.exports = {
     })
     return config
   },
+  // 图片优化
   images: {
     domains: ['img.haoolee.com'],
-  }
+  },
+  // cdn加速
+  assetPrefix:dev?'':'https://cdn.haoolee.com'
+
   // webpack5: false
 }
 

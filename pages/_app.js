@@ -14,9 +14,9 @@ function MyApp({ Component, pageProps }) {
   // const store = useStore(pageProps.initialReduxState)
 
   return <>
-      <div className={'nest-bg'}>
-        <ReactCanvasNest />
-      </div>
+      {/*<div className={'nest-bg'}>*/}
+        {/*<ReactCanvasNest />*/}
+      {/*</div>*/}
       <Header/>
       <Component {...pageProps} />
       <Footer/>
