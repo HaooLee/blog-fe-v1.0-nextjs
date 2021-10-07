@@ -199,9 +199,9 @@ export async function getServerSideProps({query}) {
     fetch('http://127.0.0.1:6060/tag/list'),
     fetch('http://127.0.0.1:6060/article/hotList'),
   ])
-  const articles = await articleRes.json()
-  const tags = await tagRes.json()
-  const hotArticle = await hotArticleRes.json()
+  const {data:articles} = await articleRes.json()
+  const {data:tags} = await tagRes.json()
+  const {data:hotArticle} = await hotArticleRes.json()
   // 通过返回 { props: { article } } 对象，Blog 组件
   // 在构建时将接收到 `posts` 参数
   return {

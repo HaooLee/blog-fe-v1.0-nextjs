@@ -101,10 +101,10 @@ function Article({data}) {
 export async function getServerSideProps({params}) {
   // 调用外部 API 获取文章
   const res = await fetch(`http://127.0.0.1:6060/article/${params.id}`)
-  const data = await res.json()
+  const {code,data} = await res.json()
 
   //没有获取到数据就导入404
-  if (!data || !data.content) {
+  if (!data || !data.content || code !== 200) {
     return {
       notFound: true
     }

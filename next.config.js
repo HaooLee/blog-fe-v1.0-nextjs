@@ -22,7 +22,6 @@ module.exports = {
   },
   // cdn加速
   assetPrefix:dev?'':'https://cdn.haoolee.com'
-
   // webpack5: false
 }
 
