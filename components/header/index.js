@@ -25,6 +25,10 @@ class Header extends React.Component {
     {
       text: '关于我',
       href: '/about'
+    },
+    {
+      text:'写文章',
+      href:'https://admin.haoolee.com/article/add'
     }
   ]
 

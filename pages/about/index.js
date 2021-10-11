@@ -12,7 +12,7 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles['banner']}>
-
+          <p>这里还没开发呢 别看了</p>
       </div>
 
 

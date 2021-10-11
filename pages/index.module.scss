@@ -30,17 +30,24 @@
   }
 }
 
+
 .container{
-  height: 90vh;
+  min-height: 90vh;
+  pointer-events: none;
+  //margin-bottom: 90vh;
   width: 1200px;
   margin: auto;
-  overflow: hidden;
-
+  position: relative;
   .slogan-wrap{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 100px;
+    color: #fff;
     span{
       font-size: 30px;
       font-weight: lighter;
