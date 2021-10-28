@@ -13,7 +13,7 @@
     --bg-line-width: 1px;
     --bg-block-size: 2em;
 
-    width: 850px;
+    max-width: 850px;
     padding: 30px;
     margin-left: 100px;
     //margin: 10px 0;
@@ -30,22 +30,26 @@
     .article-info {
       margin-bottom: 40px;
 
-      .article-title{
+      .article-title {
         font-size: 30px;
         font-weight: 700;
         word-break: break-word;
         text-align: center;
         text-shadow: 2px 2px 50px rebeccapurple
       }
-      .time{
+
+      .time {
         display: flex;
         justify-content: center;
-        &>span{
+        flex-wrap: wrap;
+
+        & > span {
           margin-left: 20px;
           display: flex;
           align-items: center;
           justify-content: space-around;
-          &>span{
+
+          & > span {
             margin-left: 4px;
           }
         }
@@ -60,7 +64,8 @@
         padding: 3px;
         //border: 1px solid #ddd;
       }
-      p{
+
+      p {
         font-size: 16px;
       }
 
@@ -225,14 +230,16 @@
       }
     }
 
-    .like-wrap{
+    .like-wrap {
       padding-top: 40px;
       display: flex;
       justify-content: center;
-      .like-btn{
-        &:hover{
-          animation: shake 1s cubic-bezier(.36, .07, .19, .97) ;
+
+      .like-btn {
+        &:hover {
+          animation: shake 1s cubic-bezier(.36, .07, .19, .97);
         }
+
         @keyframes shake {
           48%, 62% {
             transform: scale(1.0, 1.0)
@@ -274,3 +281,43 @@
   overflow-y: auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .catalog-handle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .article-wrap {
+    padding-top: 30px;
+
+    .article-detail {
+      margin: 0;
+      padding: 15px;
+    }
+  }
+
+
+  .sidebar {
+    display: none;
+  }
+
+  .catalog-handle {
+    position: fixed;
+    top: 172px;
+    right: 0px;
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 2px 0 8px #00000026;
+    border-radius: 4px 0px 0px 4px;
+  }
+
+}

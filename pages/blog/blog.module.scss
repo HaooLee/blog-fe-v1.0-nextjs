@@ -42,7 +42,8 @@
                 font-size: 14px;
                 line-height: 22px;
                 padding-right: 8px;
-                span:last-child{
+
+                span:last-child {
                   margin-left: 4px;
                 }
 
@@ -66,7 +67,8 @@
                   font-size: 13px;
                   line-height: 22px;
                   padding: 0 8px;
-                  &:hover{
+
+                  &:hover {
                     color: #1d7dfa;
                   }
                 }
@@ -79,7 +81,8 @@
               line-height: 24px;
               color: #1d2129;
             }
-            .desc{
+
+            .desc {
               font-weight: 400;
               font-size: 13px;
               line-height: 22px;
@@ -92,18 +95,22 @@
             .article-info-wrap {
               display: flex;
               align-items: center;
-              .view-count,.reply-count{
+
+              .view-count, .reply-count {
                 display: flex;
                 align-items: center;
                 color: #4e5969;
                 margin-right: 12px;
-                &:hover{
+
+                &:hover {
                   color: #1d7dfa;
                 }
-                .icon{
+
+                .icon {
                   font-size: 16px;
                 }
-                span:last-child{
+
+                span:last-child {
                   font-size: 13px;
                   margin-left: 4px;
                 }
@@ -118,6 +125,10 @@
           }
         }
       }
+
+      .pagination{
+        float: right;
+      }
     }
   }
 
@@ -131,45 +142,55 @@
     border-radius: 5px;
     margin-left: -100%;
     box-shadow: 0 8px 24px -2px rgb(0 0 0 / 10%);
-    .info{
-      .avatar-wrap{
+
+    .info {
+      .avatar-wrap {
         display: flex;
         justify-content: center;
         margin: 30px 0;
       }
-      .title{
+
+      .title {
         padding-left: 8px;
         font-weight: bold;
         font-size: 25px;
         margin-bottom: 0;
       }
-      .slogan{
+
+      .slogan {
         text-align: right;
         padding-right: 18px;
       }
     }
-    .desc{
-      padding:0 10px;
+
+    .desc {
+      padding: 0 10px;
       font-size: 13px;
-      p{
+
+      p {
 
         color: #666;
       }
     }
-    .contact{
-      padding:0 10px;
+
+    .contact {
+      padding: 0 10px;
       font-size: 13px;
+
       h3 {
         font-size: 15px;
       }
-      .email{
+
+      .email {
         display: flex;
         align-items: center;
-        span{
+
+        span {
           margin-left: 8px;
         }
       }
-      .app-icon-wrap{
+
+      .app-icon-wrap {
         margin-top: 20px;
         display: flex;
         align-items: center;
@@ -193,42 +214,50 @@
     //margin-left: -250px;
     //border: 1px solid;
 
-    .hot-article-list-wrap{
+    .hot-article-list-wrap {
       overflow: hidden;
       background-color: #fff;
       margin-top: 20px;
       box-shadow: 0 8px 24px -2px rgb(0 0 0 / 10%);
-      .hot-article-list{
-        .hot-article{
+
+      .hot-article-list {
+        .hot-article {
           padding: 8px 20px;
-          &:hover{
+
+          &:hover {
             background-color: #f8f8f8;
           }
-          a{
+
+          a {
             color: #333;
+
             .article-info-wrap {
               display: flex;
               align-items: center;
-              .view-count,.reply-count{
+
+              .view-count, .reply-count {
                 display: flex;
                 align-items: center;
                 color: #4e5969;
                 margin-right: 12px;
-                &:hover{
+
+                &:hover {
                   color: #1d7dfa;
                 }
-                .icon{
+
+                .icon {
                   font-size: 16px;
                 }
-                span:last-child{
+
+                span:last-child {
                   font-size: 13px;
                   margin-left: 4px;
                 }
               }
             }
 
-            &:hover{
-              color:#1890ff;
+            &:hover {
+              color: #1890ff;
             }
           }
         }
@@ -236,8 +265,35 @@
 
     }
   }
-
 }
 
+
+
+@media only screen and (max-width: 767px) {
+  .main {
+    padding-top: 10px;
+    .inner-wrap {
+
+      .articles-wrap {
+        margin: 0;
+      }
+
+      .pagination{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+      }
+    }
+  }
+
+  .left-slide-bar {
+    display: none;
+  }
+
+  .right-slide-bar {
+    display: none;
+  }
+}
 
 

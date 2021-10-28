@@ -1,10 +1,9 @@
 import React, {useState, useEffect, useRef} from "react"
 import {translateMarkdown2html, getAnchorList} from '@/utils'
-import {Anchor, BackTop, Tag, Button} from 'antd'
+import {Anchor, BackTop, Tag, Button, Drawer} from 'antd'
 import moment from 'moment'
 import momentConfig from '../../config/momentConfig'
 import {useRouter} from 'next/router'
-
 import {useDispatch} from "react-redux"
 import {showTitle, hideTitle} from '@/redux/actions'
 import axios from 'axios'
@@ -25,7 +24,7 @@ moment.locale('zh-cn', momentConfig)
 
 
 //文章导航组件
-const Navigation = ({list}) => {
+const Navigation = ({list, className}) => {
     const router = useRouter()
 
     const [targetOffset, setTargetOffset] = useState(undefined);
@@ -48,12 +47,13 @@ const Navigation = ({list}) => {
         )
     }
 
-    return <Anchor onClick={handleClick} showInkInFixed={true} affix={false}
+    return <Anchor className={className} onClick={handleClick} showInkInFixed={true} affix={false}
                    targetOffset={targetOffset}>{list.map(renderLink)}</Anchor>
 }
 
 
-function Article({data}) {
+const Article = ({data}) => {
+    const [visible, setVisible] = useState(false)
     const dispatch = useDispatch()
     const ref = useRef()
     // console.log('Article',data)
@@ -89,6 +89,14 @@ function Article({data}) {
             window.removeEventListener('scroll', scrollListener)
         }
     }, [])
+
+    const showCatalog = () => {
+        setVisible(true)
+    }
+
+    const onClose = () => {
+        setVisible(false)
+    };
 
 
     return (
@@ -141,6 +149,19 @@ function Article({data}) {
                     </div>
                 </div>
             </main>
+            <div className={styles['catalog-handle']} onClick={showCatalog}>
+                目录
+            </div>
+            <Drawer
+                title="目录"
+                placement="right"
+                width={240}
+                onClose={onClose}
+                visible={visible}
+            >
+                <Navigation list={anchor}/>
+            </Drawer>
+
             <BackTop></BackTop>
         </Layout>
     )

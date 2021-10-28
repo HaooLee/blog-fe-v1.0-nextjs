@@ -109,7 +109,7 @@ function Home({articles, tags, hotArticle}) {
             </ul>
 
             <Pagination onChange={pageChange} responsive current={page} total={articles.count}
-                        style={{float: 'right'}}></Pagination>
+                        className={styles['pagination']}></Pagination>
 
           </div>
         </div>

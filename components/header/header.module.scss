@@ -17,11 +17,11 @@
     display: flex;
     flex: 1;
     justify-content: space-between;
-    width: 1200px;
     min-width: 1200px;
     margin: auto;
-    transition: transform .3s cubic-bezier(.645,.045,.355,1);
-    &.hide{
+    transition: transform .3s cubic-bezier(.645, .045, .355, 1);
+
+    &.hide {
       transform: translateY(-100%);
     }
 
@@ -56,7 +56,8 @@
           &.active {
             color: #6451ab;
             font-size: 16px;
-            &:after{
+
+            &:after {
               content: "";
               position: absolute;
               bottom: 0;
@@ -82,18 +83,21 @@
       }
     }
   }
-  .container-down{
+
+  .container-down {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     transform: translateY(100%);
-    transition: transform .3s cubic-bezier(.645,.045,.355,1);
-    &.show{
+    transition: transform .3s cubic-bezier(.645, .045, .355, 1);
+
+    &.show {
       transform: translateY(0);
     }
-    .title-container{
+
+    .title-container {
       width: 1200px;
       min-width: 1200px;
       height: 100%;
@@ -101,7 +105,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      .title{
+
+      .title {
         font-size: 25px;
         font-weight: bold;
       }
@@ -109,3 +114,69 @@
   }
 
 }
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    min-width: 100%;
+
+    .container {
+      min-width: 100%;
+
+      .logo {
+        margin: auto;
+      }
+
+      .menu {
+        position: absolute;
+        right: 20px;
+        top: 0px;
+        bottom: 0px;
+        margin: auto;
+        height: 25px;
+        font-size: 25px;
+      }
+
+      .nav {
+        display: none;
+      }
+    }
+
+    .container-down {
+
+      .title-container {
+        width: 100%;
+        min-width: 100%;
+      }
+
+    }
+  }
+
+
+  .mobile-nav {
+    li {
+      height: 40px;
+      line-height: 40px;
+      display: flex;
+      justify-content: center;
+
+      a {
+        flex: 1;
+        text-align: center;
+        &.active {
+          background-color: #e6f7ff;
+        }
+      }
+
+    }
+  }
+}
+
