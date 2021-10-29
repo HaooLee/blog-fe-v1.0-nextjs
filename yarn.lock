@@ -3575,10 +3575,10 @@ rc-virtual-list@^3.0.1, rc-virtual-list@^3.2.0:
     rc-resize-observer "^1.0.0"
     rc-util "^5.0.7"
 
-react-3d-earth@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/react-3d-earth/-/react-3d-earth-1.0.3.tgz#0da8d5fe7581c2102da9302d4b65a64572414a70"
-  integrity sha512-EYkpnd7/w4DBvkxJfQZev5Rh3Ibljts3bFsBlJKpGq4XQzJXgUhduEbKL5OQBabCZtNv2sr9BUKKJTzNSYdNkw==
+react-3d-earth@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-3d-earth/-/react-3d-earth-1.0.5.tgz#dadf17e2f1002844bfc228ab3cd8d4ca27d68af5"
+  integrity sha512-CJh4prAZI3Y2lKBMmXjTNDbJK9CYhjmclUtkw2S6USdwviigAHvHTu7GFgMcfvUOMajqpCjhkhkneZWcoS5tkg==
   dependencies:
     react "^17.0.2"
     signals "^1.0.0"

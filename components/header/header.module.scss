@@ -109,6 +109,11 @@
       .title {
         font-size: 25px;
         font-weight: bold;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        padding: 0  10px;
       }
     }
   }

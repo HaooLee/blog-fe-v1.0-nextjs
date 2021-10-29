@@ -24,6 +24,7 @@ export default function Index() {
                 style={{width: '100%', height: '100vh', position: 'absolute', zIndex: '0'}}
                 config={{
                     // radius: 30,
+                    mobileRadius:18
                     // backgroundColor: '#fafafa',
                     // flagScale:1,
                     // flagLat:39.56,
