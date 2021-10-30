@@ -82,6 +82,11 @@
 
       }
     }
+
+    .menu {
+      display: none;
+    }
+
   }
 
   .container-down {
@@ -113,17 +118,15 @@
         overflow: hidden;
         width: 100%;
         white-space: nowrap;
-        padding: 0  10px;
+        padding: 0 10px;
       }
     }
   }
 
 }
 
-@media screen and (min-width: 768px) {
-  .menu {
-    display: none;
-  }
+@media only screen and (min-width: 768px) {
+
   .mobile-nav {
     display: none;
   }
@@ -141,6 +144,7 @@
       }
 
       .menu {
+        display: block;
         position: absolute;
         right: 20px;
         top: 0px;
@@ -176,6 +180,7 @@
       a {
         flex: 1;
         text-align: center;
+
         &.active {
           background-color: #e6f7ff;
         }
